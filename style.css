@@ -1,60 +1,27 @@
-body {
-    font-family: sans-serif;
+/* ファイルの末尾に以下のスタイルを追加 */
+
+.word-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-}
-
-.card {
-    width: 300px;
-    height: 150px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    gap: 15px; /* 単語とボタンの間のスペース */
+    margin-bottom: 25px; /* wordクラスからこちらに移動 */
 }
 
 .word {
-    font-size: 2em; /* 2倍の大きさ */
-    font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0; /* word-containerで余白を管理するため削除 */
 }
 
-.meaning {
-    font-size: 1.2em; /* 1.2倍の大きさ */
-    color: #555;
-}
-
-/* JavaScriptで .hidden クラスを追加したときに意味を非表示にする */
-.meaning.hidden {
-    display: none;
-}
-
-.buttons button {
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
+.speak-btn {
+    background: none;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    margin: 0 5px;
+    cursor: pointer;
+    font-size: 2em; /* アイコンの大きさを調整 */
+    padding: 0;
+    color: #3498db;
+    transition: color 0.2s;
 }
 
-.buttons button:hover {
-    background-color: #0056b3;
+.speak-btn:hover {
+    color: #2980b9;
 }
