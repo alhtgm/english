@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>英単語学習サイト</title>
+    <title>英単語4択クイズ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>英単語学習</h1>
+    <h1>英単語4択クイズ</h1>
 
-    <div class="card">
-        <div id="english-word" class="word">English</div>
-        <div id="japanese-meaning" class="meaning">日本語の意味</div>
-    </div>
-
-    <div class="buttons">
-        <button id="toggle-button">意味を隠す/表示</button>
-        <button id="next-button">次の単語へ</button>
+    <div id="quiz-container">
+        <div class="word-container">
+            <div id="question" class="word"></div>
+            <button id="speak-button" class="speak-btn">🔊</button>
+        </div>
+        <div id="choices" class="choices-grid">
+            </div>
+        <div id="feedback"></div>
+        <button id="next-button">次の問題へ</button>
     </div>
 
     <script src="script.js"></script>
